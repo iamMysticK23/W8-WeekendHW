@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Shopping Cart</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./bundle.js" defer></script>
+    
+
+</head>
+<body>
+    <!-- Navbar Title Bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-start">
+            <span class="navbar-brand mb-0 h1">OOP Shopping Cart</span>
+        </div>
+    </nav>
+
+    <div class="container mt-5 custom-container bg-secondary">
+        <!-- User Name Display -->
+        <h2 id="helloUser"></h2>
+        <div class="row">
+            <!-- Left Column for User Info -->
+            <div class="col-md-3">
+                <form id="userForm">
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="userAge" class="form-label">Your Age</label>
+                        <input type="number" class="form-control" id="userAge" placeholder="Your Age" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create User</button>
+                </form>
+            </div>
+            <!-- Middle Column for Shop -->
+            <div class="col-md-3" id="shopColumn">
+                <div id="shop"></div>
+            </div>
+            <!-- Right Column for Cart -->
+            <div class="col-md-3">
+                <div id="cart"></div>
+            </div>
+            <!-- Fourth Column for Cart Total -->
+            <div class="col-md-3">
+                <hr>
+                <div id="totalCost" class="h4"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS (Optional, if needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
