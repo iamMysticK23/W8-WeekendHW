@@ -176,10 +176,12 @@ const updateCartDisplay = (person: ShoppingCartUser | null) => {
 
 let person: ShoppingCartUser | null = null;
 const shopColumn = document.getElementById('shopColumn');
+const loginMessage = document.getElementById('loginMessage') as HTMLHeadingElement;
+
 
 // Event listener for user form submission
 const userForm = document.getElementById('userForm') as HTMLFormElement;
-if (userForm) {
+if (userForm && loginMessage) {
     userForm.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -192,10 +194,11 @@ if (userForm) {
         const newUser = createUser(userName, userAge);
         person = newUser;
 
-        // Updates the "Hello user, age" message and clears the input fields
+        // Updates the "Hello user, age" message, hides the login message, and clears the input fields
         updateCartDisplay(newUser);
         userNameInput.value = '';
         userAgeInput.value = '';
+        loginMessage.style.display = 'none';
 
         // this hides the shop until a user logs in
         if (shopColumn) {

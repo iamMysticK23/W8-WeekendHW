@@ -19,11 +19,10 @@
     </nav>
 
     <div class="container mt-5 p-3 custom-container bg-dark text-white">
-
         <!-- User Name Display -->
         <h2 id="helloUser"></h2>
         <div class="row">
-
+    
             <!-- Left Column - User Info -->
             <div class="col-md-3">
                 <form id="userForm">
@@ -38,19 +37,26 @@
                     <button type="submit" class="btn btn-primary">Login User</button>
                 </form>
             </div>
-
+    
             <!-- Middle Column - Shop -->
             <div class="col-md-6" id="shopColumn">
                 <div id="shop"></div>
             </div>
-
+    
             <!-- Right Column - Cart and Total -->
             <div class="col-md-3">
                 <div id="totalCost" class="h4 text-warning"></div>
                 <hr>
                 <div id="cart"></div>
+            </div>
         </div>
     </div>
+    
+    <!-- Message for Users -->
+    <div class="container mt-3 text-center">
+        <h2 class="text-black" id="loginMessage">You must log in to view the shopping cart.</h2>
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
