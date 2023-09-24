@@ -1,11 +1,12 @@
 
-/* Custom CSS to set a maximum width for the container and center it */
+/* sets a maximum width for the container and centers it */
 .custom-container {
-    max-width: 50%; /* Adjust the value as needed */
+    max-width: 75%; 
     margin: 0 auto;
     text-align: center;
 }
 
+/* hides the shop column until a user is generated */
 #shopColumn {
     text-align: right;
     display: none;
