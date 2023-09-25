@@ -124,12 +124,12 @@ const initShop = () => {
 
         // items for sale
         const items: ShoppingCartItem[] = [
-            createItem("Red Apples", 3.00, "Grown in Washington", "https://d3fwccq2bzlel7.cloudfront.net/Pictures/1024x536/4/6/9/42469_2_1201037_e.jpg"),
-            createItem("Peaches", 2.50, "Grown in South Georgia", "https://robbreport.com/wp-content/uploads/2023/06/Georgia-Peaches.jpg"),
-            createItem("Bananas for Donkey Kong", 1.75, "Imported From Mexico", "https://i0.wp.com/mynintendonews.com/wp-content/uploads/2013/05/donkey_kong_bananas.jpg"),
-            createItem("Organic Royal Star Papaya", 1.15, "Fresh From Texas", "https://specialtyproduce.com/sppics/8443.png"),
-            createItem("Organic Blackberries", 7.50, "Grown in California", "https://h2.commercev3.net/cdn.gurneys.com/images/800/74033.jpg"),
-            createItem("Strawberries", 5.50, "Grown near Santa Cruz, California", "https://vegetablegrowersnews.com/wp-content/uploads/2018/07/California-strawberries.jpg"),
+            createItem("Red Apples: one bag", 3.00, "Grown in Washington", "https://d3fwccq2bzlel7.cloudfront.net/Pictures/1024x536/4/6/9/42469_2_1201037_e.jpg"),
+            createItem("Peaches: set of 4", 2.50, "Grown in South Georgia", "https://robbreport.com/wp-content/uploads/2023/06/Georgia-Peaches.jpg"),
+            createItem("Bananas for Donkey Kong: bunch of 5", 3.75, "Imported From Mexico", "https://i0.wp.com/mynintendonews.com/wp-content/uploads/2013/05/donkey_kong_bananas.jpg"),
+            createItem("Organic Royal Star Papaya: set of 3", 1.15, "Fresh From Texas", "https://specialtyproduce.com/sppics/8443.png"),
+            createItem("Organic Blackberries: package", 7.50, "Grown in California", "https://h2.commercev3.net/cdn.gurneys.com/images/800/74033.jpg"),
+            createItem("Strawberries: package", 5.50, "Grown near Santa Cruz, California", "https://vegetablegrowersnews.com/wp-content/uploads/2018/07/California-strawberries.jpg"),
         ];
 
         // Bootstrap 5 cards for each item
